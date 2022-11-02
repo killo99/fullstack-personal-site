@@ -104,7 +104,7 @@ app.post("/admin_panel", function(req, res){
                                 console.log(err)
 
                             }else{
-                                res.redirect("uid_killo")
+                                res.redirect("uid_killo-admin")
                             }
                         });
                     });
@@ -143,4 +143,5 @@ if(port == null || port ==""){
 app.listen(port, function(){
     console.log("Server has started successfully.");
 });
+
 //done
