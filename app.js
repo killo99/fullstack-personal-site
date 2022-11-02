@@ -133,8 +133,14 @@ app.get('*', function(req, res){
     res.status(404).render("404");
 });
 
+
+let port = process.env.PORT;
+if(port == null || port ==""){
+    port = 3000;
+}
+
 //listener
-app.listen(8000, function(){
-    console.log("Server listening on port 8000");
+app.listen(port, function(){
+    console.log("Server has started successfully.");
 });
 //done
