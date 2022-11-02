@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css3?family=Ubuntu&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    color:azure;
+}
+body
+{
+    background: url(/img/bg-cat2.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .container
+{
+    height: 450px;
+    width: 500px;
+    background-color: #1c1c1c;
+    padding: 30px;
+    overflow: hidden;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+body .container h1
+{
+    text-align: center;
+    font-size: 70px;
+}
+body .container h2
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+body .container h3
+{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+body .container .msg
+{
+    height: 200px;
+    width: 100%;
+    background-color: #111;
+}
+body .container .msg p
+{
+    padding: 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+body .container .msg::-webkit-scrollbar
+{
+    width: 10px;
+}

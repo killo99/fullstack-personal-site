@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(/img/bg-cat2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form.box
+{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 480px;
+    background-color: #111;
+    padding: 30px;
+    gap: 25px;
+    border-radius: 40px;
+    opacity: 0.8;
+}
+form.box:hover
+{
+    box-shadow: 0 5px 25px aqua;
+    border: solid aqua 1px;
+}
+
+form.box .img
+{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: url(/img/prof.jpg);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+    margin: 20px;
+    z-index: 999;
+    opacity: 1;
+}
+form.box .img:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px aqua;
+    border: solid aqua 1px;
+    opacity: 1;
+
+}
+form.box input
+{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #1c1c1c;
+    color: aqua;
+    border: solid aqua 1px;
+    width: 80%;
+    align-self: center;
+}
+form.box input::placeholder
+{
+    opacity: 0.7;
+    font-size: 16px;
+    color: aqua;
+}
+form.box input:hover
+{
+    box-shadow: 0 5px 15px aqua;
+    border: solid aqua 1px;
+}
+form.box h5
+{
+    align-self: center;
+    color: red;
+    font-weight: 600;
+}
+
+form.box button
+{
+    height: 30px;
+    width: 80px;
+    border: solid aqua 1px;
+    color: aqua;
+    background-color: #111;
+    margin-left: 35px;
+}
+form.box button:hover
+{
+    box-shadow: 0 5px 15px aqua;
+    border: solid aqua 1px;
+    color: aqua;
+}
+
+form.box p
+{
+    text-align: justify;
+    color: yellow;
+    margin: 10px;
+}

@@ -1,0 +1,64 @@
+<%- include('partials/header'); %>
+<!-- Navbar links -->
+<nav class="navbar navbar-expand-md">
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     
+    <div class="cssnav collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li  class="nav-item">
+                <a href="home" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- about section start -->
+<section class="about" id="about">
+    <div class="max-width">
+        <div class="abt">
+            <h1 class="head">About Me</h1>
+            <div class="imgCard">
+                <div class="img">
+                    <img src="/img/img4.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/img/img5.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="/img/img3.jpg" alt="">
+                </div>
+                
+            </div>
+            <p class="p1">Hi, I'm Moti</p>
+            <p class="p1"><span class="typing-2"></span></p>
+        </div>
+        
+        <div class="about-content">
+            <div class="column left">
+                <h1>Web Dev <i class="fa fa-code"></i></h1>
+                <p>I'm full stack web developer adept in working in both front-end and back-end development processes and skilled in programming design, development, and implementation of functional specifications.</p>
+                <h1>Designer <i class="fa fa-paint-brush"></i></h1>
+                <p>I'm UI/UX designer and front end developer with strong conceptualization ability, attention to detail, and creative eye, able to solve complex challenges, while keeping in mind needs of the end user.</p>
+                <!-- <img src="/____$files/__img/profile2.jpg" alt=""> -->
+            </div>
+            <div class="column right">
+                <h1> Mob Dev <i class="fab fa-android"></i> </h1>
+                <p>I'm mobile app developer with experience in both android and IOS app development using flutter and having the ability to always seek for ways to improve an app that currently exists.</p>
+                <h1> CEH <i class="fab fa-redhat"></i></h1>
+                <p>I'm penetration tester and have proven ability to identify and exploit vulnerabilities in systems and on web applications to identify vulnerabilities like SQL Injection, Cross-Site Scripting (XSS) and directory traversal. etc.</p> 
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('partials/footer'); %>
