@@ -17,8 +17,8 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 //connect to mongoose
-// mongoose.connect("mongodb://localhost:27017/messageDB")
-mongoose.connect(process.env.MONGODB);
+mongoose.connect("mongodb://localhost:27017/messageDB");
+// mongoose.connect(process.env.MONGODB);
 
 app.get("/", function(req, res){
     res.render("index");
