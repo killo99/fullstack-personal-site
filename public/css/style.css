@@ -556,8 +556,6 @@ nav.navbar .cssnav li a:hover
     color: teal;
     background: none;
 }
-
-
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -580,5 +578,24 @@ nav.navbar .cssnav li a:hover
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .about p{
+        text-align: justify;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
     }
 }

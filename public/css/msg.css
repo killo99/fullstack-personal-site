@@ -19,24 +19,30 @@ body
 }
 body .container
 {
+    margin: 10px;
+    padding: 10px;
     height: 450px;
-    width: 500px;
+    width: 420px;
     background-color: #1c1c1c;
     padding: 30px;
-    overflow: hidden;
-    opacity: 0.8;
-    border-radius: 10px;
+    opacity: 0.9;
+    border-radius: 20px;
 }
 body .container h1
 {
     text-align: center;
     font-size: 70px;
+    margin: 10px 5px;
+    color: pink;
+    border: solid pink 1px;
+    border-radius: 10px;
 }
 body .container h2
 {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 body .container h3
 {
@@ -45,17 +51,16 @@ body .container h3
 }
 body .container .msg
 {
-    height: 200px;
+    height: 130px;
     width: 100%;
     background-color: #111;
+    border: solid pink 1px;
+    /* scrollbar for msg div */
+    overflow-y: scroll;
 }
 body .container .msg p
 {
-    padding: 20px;
+    padding: 15px;
     text-align: justify;
     font-size: 17px;
-}
-body .container .msg::-webkit-scrollbar
-{
-    width: 10px;
 }
