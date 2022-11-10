@@ -62,6 +62,9 @@ app.get("/skills", function(req, res){
 app.get("/contact", function(req, res){
     res.render("contact")
 });
+app.post("/home", function(req, res){
+    res.render("index")
+});
 
 //admin login
 let credsError;

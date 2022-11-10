@@ -1,14 +1,14 @@
 $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Fullstack Web Developer", "Mobile App Developer", "Penetration Tester", "UI/UX Designer", "Software Engineer"],
+        strings: ["Fullstack Web Developer", "Mobile App Developer","Software Engineer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["I'm a Developer", "I'm a Designer", "I'm a CEH", "I ❤ Python", "I'm a Freelancer"],
+        strings: ["I'm a Developer", "I'm a Designer", "Penetration Tester", "I ❤ Python"],
         typeSpeed: 120,
         backSpeed: 60,
         loop: true

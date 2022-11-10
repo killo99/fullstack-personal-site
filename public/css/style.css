@@ -10,30 +10,10 @@
 html{
     scroll-behavior: smooth;
 }
-
-/* custom scroll bar for chrome */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: white;
-}
-::-webkit-scrollbar-thumb {
-    background: teal;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #333;
-}
-
 /* all similar content styling codes */
 section
 {
     padding: 100px 0;
-    background: url("/img/bg-cat.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 .max-width
 {
@@ -58,10 +38,9 @@ nav.navbar
 {
     position: fixed;
     display: absolute;
-    background: #DFD3C3;
+    background-color: #EEEEEE;
     width: 100%;
     z-index: 999;
-    font-family: 'Inspiration', sans-serif;
     border-bottom: solid teal;
     top: 0;
     opacity: 0.8;
@@ -74,7 +53,7 @@ nav.navbar button
 {
     border: solid 2px teal;
     border-color: teal;
-    margin-left: 20px;  
+    /* margin-left: 20px;   */
 }
 nav.navbar .cssnav
 {
@@ -93,9 +72,9 @@ nav.navbar .cssnav li a{
     text-decoration: none;
     display: block;
     color: black;
-    font-size: 38px;
+    font-size: 18px;
     font-weight: 500;
-    margin-right: 25px;
+    font-family: 'Poppins';
 }
 nav.navbar .cssnav li a:hover
 {
@@ -297,26 +276,16 @@ nav.navbar .cssnav li a:hover
     box-shadow: 0 3px 15px teal;
 }
 
-/* about */
-.about .imgCard
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 .about .imgCard img
 {
-    height: 400px;
-    width: 250px;
+    height: 480px;
+    width: 300px;
     border-radius: 20px;
 }
 .about .imgCard img:hover
 {
     transform: scale(1.02);
-    box-shadow: 0 5px 15px teal;
+    box-shadow: 0 5px 15px #20B2AA;
 }
 .about .abt
 {
@@ -361,22 +330,73 @@ nav.navbar .cssnav li a:hover
     font-family: 'Ubuntu';
 
 }
-
-.about .about-content .left{
-    width: 50%;
-}
 .about .about-content p
 {
     text-align: justify;
-    padding: 30px;
     font-size: 19px;
     color: black;
 }
-.about .about-content .right{
-    width: 50%;
+.about .about-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .about-content .box
+{
+    border: solid 1px teal;
+    height: 250px;
+    width: 300px;
+    padding: 10px;
+    font-size: 4px;
+    overflow: hidden;
+    margin: 10px;
+}
+.about .about-content .box i
+{
+    border: solid 2px teal;
+    padding: 5px;
+    margin: 0 40%;
+    color: #20B2AA;
+    align-self: center;
+}
+.about .about-content .box i:hover
+{
+    background-color: #20B2AA;
+    border-color: #20B2AA;
+    color: white;
+    transform: scale(1.12);
 }
 
+.about .about-content .box1:hover
+{
+    background-color: #7DE5ED;
+    border: solid 1px #7DE5ED;
+    box-shadow: 0 5px 15px #7DE5ED;
+}
+.about .about-content .box2:hover
+{
+    background-color: #FFECEF;
+    border: solid 1px #FFECEF;
+    box-shadow: 0 5px 15px #FFECEF;
+}
+.about .about-content .box3:hover
+{
+    background-color: #C3F8FF;
+    border: solid 1px #C3F8FF;
+    box-shadow: 0 5px 15px #C3F8FF;
+}
+.about .about-content .box4:hover
+{
+    background-color: #8BBCCC;
+    border: solid 1px #8BBCCC;
+    box-shadow: 0 5px 15px #8BBCCC;
+}
 /* skills section styling */
+.skills{
+    min-height: 60vh;
+}
 .skills h1
 {
     text-align: center;
@@ -402,7 +422,7 @@ nav.navbar .cssnav li a:hover
     font-size: 18px;
 }
 .skills .skills-content .line{
-    height: 20px;
+    height: 3px;
     width: 100%;
     background: grey;
     position: relative;
@@ -454,6 +474,7 @@ nav.navbar .cssnav li a:hover
 .skills-content .db::before{
     width: 75%;
 }
+
 
 /* contact section styling */
 .contact h1
@@ -521,9 +542,9 @@ nav.navbar .cssnav li a:hover
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     transition: all 0.3s ease;
-    background-color: #F5EFE6;
+    background-color: white;
     opacity: 0.7;
     color: black;
 }

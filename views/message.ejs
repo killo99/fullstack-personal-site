@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="/css/msg.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Thank You!</h1>
-        <h2>Message sent successfully.</h2>
-        <h3>Name: <%= nameEJS %> </h3>
-        <h3>Email: <%= emailEJS %> </h3>
-        <h3>Subject: <%= subjectEJS %> </h3>
-        <h3>Message</h3>
-        <div class="msg">
-            <p><%= msgEJS %></p>
+    <form action="/home" method="post">
+        <div class="container">
+            <h1>Thank You!</h1>
+            <h2>Message sent successfully.</h2>
+            <h3>Name: <%= nameEJS %> </h3>
+            <h3>Email: <%= emailEJS %> </h3>
+            <h3>Subject: <%= subjectEJS %> </h3>
+            <h3>Message</h3>
+            <div class="msg">
+                <p><%= msgEJS %></p>
+            </div>
+            <button type="submit">Home</button>
         </div>
-    </div>
+    </form>
 </body>
 </html>
