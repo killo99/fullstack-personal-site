@@ -14,6 +14,7 @@ html{
 section
 {
     padding: 100px 0;
+    min-height: 90vh;
 }
 .max-width
 {
@@ -36,9 +37,10 @@ section
 
 nav.navbar
 {
+    min-height: 90px;
     position: fixed;
     display: absolute;
-    background-color: #EEEEEE;
+    background-color: #213E3B;
     width: 100%;
     z-index: 999;
     border-bottom: solid teal;
@@ -71,14 +73,14 @@ nav.navbar .cssnav li:active
 nav.navbar .cssnav li a{
     text-decoration: none;
     display: block;
-    color: black;
+    color: #37E2D5;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Poppins';
 }
 nav.navbar .cssnav li a:hover
 {
-    color: teal;
+    color: aqua;
 }
 /* home section styling */
 .home{
@@ -87,8 +89,8 @@ nav.navbar .cssnav li a:hover
     background: url("/img/bg-programmer.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;;
-    min-height: 500px;
+    background-attachment: fixed;
+    /* min-height: 500px; */
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -275,22 +277,25 @@ nav.navbar .cssnav li a:hover
     color: aqua;
     box-shadow: 0 3px 15px teal;
 }
-
+/* about */
+.about
+{
+    background-color: #3C4048;
+}
 .about .imgCard img
 {
-    height: 480px;
+    height: 500px;
     width: 300px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 .about .imgCard img:hover
 {
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px #20B2AA;
+    box-shadow: 0 5px 25px aqua;
 }
-.about .abt
+/* .about .abt
 {
     padding: 0 10px;
-}
+} */
 .about .abt p.p1
 {
     font-size: 40px;
@@ -298,17 +303,23 @@ nav.navbar .cssnav li a:hover
     font-family: 'Poppins';
     padding-top: 10px;
     text-align: center;
+    color: #C3F8FF;
 }
 .about .abt p.p1 span
 {
-    color: teal;
+    /* color: aqua; */
     font-family: 'Ubuntu';
+    font-size: 30px;
 }
 .about .abt p.p1 span.name
 {
-    color: #256D85;
+    color: aqua;
     font-weight: normal;
     font-size: 40px;
+}
+.about .abt p.p1 span.name:hover
+{
+    color: aquamarine;
 }
 .about p{
     text-align: justify;
@@ -319,20 +330,20 @@ nav.navbar .cssnav li a:hover
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 70px;
-    color: teal;
+    color: aqua;
 }
 .about h1
 {
     text-align: center;
     color: teal;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     font-family: 'Ubuntu';
 
 }
 .about .about-content p
 {
-    text-align: justify;
+    text-align: center;
     font-size: 19px;
     color: black;
 }
@@ -345,35 +356,49 @@ nav.navbar .cssnav li a:hover
 }
 .about .about-content .box
 {
-    border: solid 1px teal;
+    /* border: solid 1px teal; */
     height: 250px;
     width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
     font-size: 4px;
     overflow: hidden;
     margin: 10px;
 }
-.about .about-content .box i
+.about .about-content .box1
 {
-    border: solid 2px teal;
-    padding: 5px;
-    margin: 0 40%;
-    color: #20B2AA;
-    align-self: center;
+    background-color: #8BBCCC;
+    border: solid 1px #8BBCCC;
+    box-shadow: 0 5px 15px #8BBCCC;
+    
 }
-.about .about-content .box i:hover
+.about .about-content .box2
 {
-    background-color: #20B2AA;
-    border-color: #20B2AA;
-    color: white;
-    transform: scale(1.12);
+    background-color: #C3F8FF;
+    border: solid 1px #C3F8FF;
+    box-shadow: 0 5px 15px #C3F8FF;
 }
-
-.about .about-content .box1:hover
+.about .about-content .box3
+{
+    background-color: #9C9EFE;
+    border: solid 1px #9C9EFE;
+    box-shadow: 0 5px 15px #9C9EFE;
+}
+.about .about-content .box4
 {
     background-color: #7DE5ED;
     border: solid 1px #7DE5ED;
     box-shadow: 0 5px 15px #7DE5ED;
+}
+/* hover */
+.about .about-content .box1:hover
+{
+    background-color: #FFA1CF;
+    border: solid 1px #FFA1CF;
+    box-shadow: 0 5px 15px #FFA1CF;
 }
 .about .about-content .box2:hover
 {
@@ -383,19 +408,20 @@ nav.navbar .cssnav li a:hover
 }
 .about .about-content .box3:hover
 {
-    background-color: #C3F8FF;
-    border: solid 1px #C3F8FF;
+    background-color: #FFE6F7;
+    border: solid 1px #FFE6F7;
     box-shadow: 0 5px 15px #C3F8FF;
 }
 .about .about-content .box4:hover
 {
-    background-color: #8BBCCC;
-    border: solid 1px #8BBCCC;
-    box-shadow: 0 5px 15px #8BBCCC;
+    background-color: #47B5FF;
+    border: solid 1px #47B5FF;
+    box-shadow: 0 5px 15px #47B5FF;
 }
 /* skills section styling */
 .skills{
-    min-height: 60vh;
+    background-color: #1C2B2D;
+    min-height: 80vh;
 }
 .skills h1
 {
@@ -403,7 +429,7 @@ nav.navbar .cssnav li a:hover
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 70px;
-    color: teal;
+    color: aqua;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -420,11 +446,12 @@ nav.navbar .cssnav li a:hover
 .skills .skills-content span{
     font-weight: 500;
     font-size: 18px;
+    color: aqua;
 }
 .skills .skills-content .line{
-    height: 3px;
+    height: 5px;
     width: 100%;
-    background: grey;
+    background: gray;
     position: relative;
 }
 .skills .skills-content .line::before{
@@ -433,7 +460,8 @@ nav.navbar .cssnav li a:hover
     height: 100%;
     left: 0;
     top: 0;
-    background: #20B2AA;
+    /* background: #20B2AA; */
+    background-color: whitesmoke;
 }
 /* left */
 .skills-content .html::before{
@@ -477,13 +505,25 @@ nav.navbar .cssnav li a:hover
 
 
 /* contact section styling */
+.contact
+{
+    background-color: #393E46;
+    min-height: 95vh;
+}
+.contact .text,
+.contact p,
+.contact .head
+{
+    color: #C3F8FF;
+}
+
 .contact h1
 {
     text-align: center;
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 70px;
-    color: teal;
+    color: aqua;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -509,13 +549,13 @@ nav.navbar .cssnav li a:hover
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: teal;
+    color: aqua;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: aqua;
 }
 .contact .right form .fields{
     display: flex;
@@ -537,25 +577,27 @@ nav.navbar .cssnav li a:hover
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1.5px solid teal;
+    border: 1.5px solid #C3F8FF;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins';
     transition: all 0.3s ease;
-    background-color: white;
+    background-color: transparent;
     opacity: 0.7;
-    color: black;
+    color: #C3F8FF;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: teal;
+    border-color: #C3F8FF;
 }
 .contact .right form .field input::placeholder,
 .contact .right form .textarea textarea::placeholder
 {
     opacity: 1;
+    color: #C3F8FF;
+    /* background-color: #100720; */
 }
 .contact .right form .textarea textarea{
     padding-top: 10px;
@@ -566,7 +608,7 @@ nav.navbar .cssnav li a:hover
     align-items: center;
 }
 .right form .button-area button{
-    color: #fff;
+    color: black;
     display: block;
     width: 160px!important;
     height: 45px;
@@ -576,14 +618,46 @@ nav.navbar .cssnav li a:hover
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: teal;
-    border: 2px solid teal;
+    background: #C3F8FF;
+    border: 2px solid #C3F8FF;
     transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-    color: teal;
+    color: #C3F8FF;
     background: none;
 }
+
+/* footer */
+footer
+{
+    display: absolute;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    background-color: #213E3B;
+    border-top: solid 2px #C3F8FF;
+}
+footer .footerBox .data
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+footer .footerBox .data a img
+{
+    height: 30px;
+    width: 30px;
+    justify-content: space-between;
+}
+footer .footerBox .data a img:hover
+{
+    transform: scale(1.12);
+}
+
+
+
+
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
