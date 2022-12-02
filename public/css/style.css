@@ -40,10 +40,10 @@ nav.navbar
     min-height: 90px;
     position: fixed;
     display: absolute;
-    background-color: #213E3B;
+    background-color:#1c1c1c;
     width: 100%;
     z-index: 999;
-    border-bottom: solid teal;
+    border-bottom: solid #47B5FF;
     top: 0;
     opacity: 0.8;
 }
@@ -73,14 +73,14 @@ nav.navbar .cssnav li:active
 nav.navbar .cssnav li a{
     text-decoration: none;
     display: block;
-    color: #37E2D5;
+    color: #47B5FF;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Poppins';
 }
 nav.navbar .cssnav li a:hover
 {
-    color: aqua;
+    color: #31E1F7;
 }
 /* home section styling */
 .home{
@@ -284,21 +284,18 @@ nav.navbar .cssnav li a:hover
 }
 .about .imgCard img
 {
-    height: 500px;
-    width: 300px;
+    height: 330px;
+    width: 220px;
     border-radius: 30px;
+    margin: auto;
 }
 .about .imgCard img:hover
 {
-    box-shadow: 0 5px 25px aqua;
+    box-shadow: 0 5px 25px #47B5FF;
 }
-/* .about .abt
-{
-    padding: 0 10px;
-} */
 .about .abt p.p1
 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500px;
     font-family: 'Poppins';
     padding-top: 10px;
@@ -307,15 +304,14 @@ nav.navbar .cssnav li a:hover
 }
 .about .abt p.p1 span
 {
-    /* color: aqua; */
     font-family: 'Ubuntu';
-    font-size: 30px;
+    font-size: 20px;
 }
 .about .abt p.p1 span.name
 {
-    color: aqua;
+    color: #47B5FF;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 25px;
 }
 .about .abt p.p1 span.name:hover
 {
@@ -329,8 +325,8 @@ nav.navbar .cssnav li a:hover
     text-align: center;
     font-family: 'Inspiration';
     font-weight: 500;
-    font-size: 70px;
-    color: aqua;
+    font-size: 60px;
+    color: #FFFFFF;
 }
 .about h1
 {
@@ -341,32 +337,41 @@ nav.navbar .cssnav li a:hover
     font-family: 'Ubuntu';
 
 }
-.about .about-content p
-{
-    text-align: center;
-    font-size: 19px;
-    color: black;
-}
 .about .about-content
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0 15%;
+}
+.about .about-content p
+{
+    text-align: center;
+    font-size: 19px;
+    color: black;
 }
 .about .about-content .box
 {
     /* border: solid 1px teal; */
-    height: 250px;
-    width: 300px;
+    height: 160px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    font-size: 4px;
+    padding: 15px;
+    /* font-size: 2px; */
     overflow: hidden;
     margin: 10px;
+}
+.about .about-content .box h1
+{
+    font-size: 17px;
+}
+.about .about-content .box p
+{
+    font-size: 13px;
 }
 .about .about-content .box1
 {
@@ -399,37 +404,187 @@ nav.navbar .cssnav li a:hover
     background-color: #FFA1CF;
     border: solid 1px #FFA1CF;
     box-shadow: 0 5px 15px #FFA1CF;
+    transform: scale(1.23);
+    transition: 0.6s ease;
 }
 .about .about-content .box2:hover
 {
     background-color: #FFECEF;
     border: solid 1px #FFECEF;
     box-shadow: 0 5px 15px #FFECEF;
+    transform: scale(1.23);
+    transition: 0.6s ease;
 }
 .about .about-content .box3:hover
 {
     background-color: #FFE6F7;
     border: solid 1px #FFE6F7;
     box-shadow: 0 5px 15px #C3F8FF;
+    transform: scale(1.23);
+    transition: 0.6s ease;
 }
 .about .about-content .box4:hover
 {
     background-color: #47B5FF;
     border: solid 1px #47B5FF;
     box-shadow: 0 5px 15px #47B5FF;
+    transform: scale(1.23);
+    transition: 0.6s ease;
 }
+
+/* projects */
+.projectSec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.projectSec .projHead h1
+{
+    text-align: center;
+    font-family: 'Inspiration';
+    font-weight: 500;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+.projectSec .projHead p
+{
+    text-align: center;
+    color: #47B5FF;
+    margin: 10px 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.project-content .item
+{
+    height: 500px;
+    width: 700px;
+    border: solid 1px #1c1c1c;
+}
+.project-content .carousel-inner:hover
+{
+    transform: scale(1.08);
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 15px #47B5FF;
+}
+/* slides image */
+/* .project-content .slide-1 h1,
+.project-content .slide-2 h1,
+.project-content .slide-3 h1,
+.project-content .slide-4 h1,
+.project-content .slide-5 h1,
+.project-content .slide-6 h1
+{
+    text-align: center;
+    color: #47B5FF;
+    font-weight: 500;
+    margin-top: 10px;
+} */
+.project-content .slide-1 a,
+.project-content .slide-2 a,
+.project-content .slide-3 a,
+.project-content .slide-4 a,
+.project-content .slide-5 a,
+.project-content .slide-6 a,
+.project-content .slide-7 a
+{
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 50px);
+    border: solid 1px #47B5FF;
+    align-self: center;
+    padding: 10px;
+    color: #47B5FF;
+    font-size: 13px;
+    font-weight: 500;
+}
+.project-content .slide-1 a:hover,
+.project-content .slide-2 a:hover,
+.project-content .slide-3 a:hover,
+.project-content .slide-4 a:hover,
+.project-content .slide-5 a:hover,
+.project-content .slide-6 a:hover,
+.project-content .slide-7 a:hover
+{
+    background-color: #47B5FF;
+    transition: 0.6s ease;
+    color: #FFFFFF;
+}
+.project-content .slide-1
+{
+    background: url("/img/p1.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-2
+{
+    background: url("/img/p2.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-3
+{
+    background: url("/img/p3.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-4
+{
+    background: url("/img/proj4.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-5
+{
+    background: url("/img/proj5.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-6
+{
+    background: url("/img/proj6.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project-content .slide-7
+{
+    background: url("/img/proj7.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* skills section styling */
 .skills{
-    background-color: #1C2B2D;
-    min-height: 80vh;
+    /* background-color: #00C1D4; */
+    background-color: #3D3C42;
+    min-height: 70vh;
 }
 .skills h1
 {
     text-align: center;
     font-family: 'Inspiration';
     font-weight: 500;
-    font-size: 70px;
-    color: aqua;
+    font-size: 60px;
+    color: #FFFFFF;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -446,12 +601,12 @@ nav.navbar .cssnav li a:hover
 .skills .skills-content span{
     font-weight: 500;
     font-size: 18px;
-    color: aqua;
+    color: white;
 }
 .skills .skills-content .line{
     height: 5px;
     width: 100%;
-    background: gray;
+    background: #434242;
     position: relative;
 }
 .skills .skills-content .line::before{
@@ -461,7 +616,7 @@ nav.navbar .cssnav li a:hover
     left: 0;
     top: 0;
     /* background: #20B2AA; */
-    background-color: whitesmoke;
+    background-color: #D6E4E5;
 }
 /* left */
 .skills-content .html::before{
@@ -507,14 +662,16 @@ nav.navbar .cssnav li a:hover
 /* contact section styling */
 .contact
 {
-    background-color: #393E46;
+    background-color: #FFFFFF;
     min-height: 95vh;
+    padding: 150px 0;
 }
 .contact .text,
 .contact p,
 .contact .head
 {
-    color: #C3F8FF;
+    color: #3D3C42;
+    font-size: 16px;
 }
 
 .contact h1
@@ -522,8 +679,8 @@ nav.navbar .cssnav li a:hover
     text-align: center;
     font-family: 'Inspiration';
     font-weight: 500;
-    font-size: 70px;
-    color: aqua;
+    font-size: 60px;
+    color: #3D3C42;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -549,13 +706,13 @@ nav.navbar .cssnav li a:hover
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: aqua;
+    color: #3D3C42;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: aqua;
+    color: #113F67;
 }
 .contact .right form .fields{
     display: flex;
@@ -577,7 +734,7 @@ nav.navbar .cssnav li a:hover
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1.5px solid #C3F8FF;
+    border: 1.5px solid #3D3C42;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -586,18 +743,17 @@ nav.navbar .cssnav li a:hover
     transition: all 0.3s ease;
     background-color: transparent;
     opacity: 0.7;
-    color: #C3F8FF;
+    color: #3D3C42;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #C3F8FF;
+    border-color: #3D3C42;
 }
 .contact .right form .field input::placeholder,
 .contact .right form .textarea textarea::placeholder
 {
     opacity: 1;
-    color: #C3F8FF;
-    /* background-color: #100720; */
+    color: #1C2B2D;
 }
 .contact .right form .textarea textarea{
     padding-top: 10px;
@@ -608,7 +764,7 @@ nav.navbar .cssnav li a:hover
     align-items: center;
 }
 .right form .button-area button{
-    color: black;
+    color: #3D3C42;
     display: block;
     width: 160px!important;
     height: 45px;
@@ -618,13 +774,13 @@ nav.navbar .cssnav li a:hover
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: #C3F8FF;
-    border: 2px solid #C3F8FF;
-    transition: all 0.3s ease;
+    background: none;
+    border: 2px solid #3D3C42;
+    transition: all 0.4s ease;
 }
 .right form .button-area button:hover{
-    color: #C3F8FF;
-    background: none;
+    color: #FFFFFF;
+    background-color: #3D3C42;
 }
 
 /* footer */
@@ -653,6 +809,7 @@ footer .footerBox .data a img
 footer .footerBox .data a img:hover
 {
     transform: scale(1.12);
+    transition: 0.07s;
 }
 
 
@@ -662,7 +819,13 @@ footer .footerBox .data a img:hover
     .max-width{
         padding: 0 50px;
     }
-}
+    .project-content .item
+    {
+        height: 450px;
+        width: 700px;
+        border: solid 1px #1c1c1c;
+    }
+    }
 @media (max-width: 947px){
     .max-width{
         max-width: 930px;
@@ -684,11 +847,21 @@ footer .footerBox .data a img:hover
     .about p{
         text-align: justify;
     }
+    .project-content .item
+    {
+        height: 400px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
+    }
+    .project-content .item
+    {
+        height: 350px;
+        width: 250px;
     }
 }
 
@@ -699,5 +872,10 @@ footer .footerBox .data a img:hover
     .contact .right form .name,
     .contact .right form .email{
         margin: 0;
+    }
+    .project-content .item
+    {
+        height: 330px;
+        width: 250px;
     }
 }

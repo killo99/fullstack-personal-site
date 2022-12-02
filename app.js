@@ -58,6 +58,11 @@ app.get("/skills", function(req, res){
     res.render("skills")
 });
 
+//projects
+app.get("/projects", function(req, res){
+    res.render("projects")
+});
+
 //contact
 app.get("/contact", function(req, res){
     res.render("contact")
