@@ -46,14 +46,13 @@ form.box .img
     align-self: center;
     margin: 20px;
     z-index: 999;
-    opacity: 1;
 }
 form.box .img:hover
 {
     transform: scale(1.2);
     box-shadow: 0 5px 15px aqua;
     border: solid aqua 1px;
-    opacity: 1;
+    transition: 0.6s;
 }
 form.box input
 {
@@ -64,6 +63,7 @@ form.box input
     border: solid teal 1px;
     width: 80%;
     align-self: center;
+    outline: none;
 }
 form.box input::placeholder
 {
@@ -75,10 +75,12 @@ form.box input:hover
 {
     box-shadow: 0 5px 15px aqua;
     border: solid teal 1px;
+    outline: none;
 }
 form.box input:focus
 {
     border-color: teal 1px;
+    outline: none;
 }
 form.box h5
 {

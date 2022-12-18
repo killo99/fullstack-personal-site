@@ -12,13 +12,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #404258;
 }
 body .container
 {
     margin: 10px;
     padding: 10px;
     height: 450px;
-    width: 280px;
+    width: 480px;
     background-color: black;
     padding: 30px;
     opacity: 0.9;
@@ -59,19 +60,12 @@ body .container .msg p
     text-align: justify;
     font-size: 17px;
 }
-body .container:hover
-{
-    background-color: #111;
-    border: solid 2px aqua;
-    box-shadow: 0 5px 5px aqua;
-    opacity: 1;
-}
 button{
     margin-top: 10px;
     color: #fff;
     display: block;
     width: 140px!important;
-    height: 40px;
+    height: 35px;
     outline: none;
     font-size: 18px;
     font-weight: 500;
@@ -85,4 +79,26 @@ button{
 button:hover{
     color: pink;
     background: none;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 750px) {
+    body .container{
+        height: 290px;
+        width: 320px;
+    }
+}
+@media (max-width: 690px) {
+    body .container{
+        height: 270px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    body .container{
+        height: 265px;
+        width: 280px;
+    }
 }
