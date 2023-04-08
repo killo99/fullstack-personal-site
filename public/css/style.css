@@ -37,15 +37,15 @@ section
 
 nav.navbar
 {
-    min-height: 90px;
+    min-height: 100px;
     position: fixed;
     display: absolute;
-    background-color:#1c1c1c;
+    background-color: teal;
     width: 100%;
     z-index: 999;
-    border-bottom: solid #47B5FF;
+    border-bottom: 4px solid #EEEEEE;
     top: 0;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 nav.navbar:hover
 {
@@ -66,27 +66,34 @@ nav.navbar .cssnav li{
     list-style: none;
     display: inline-block;
 }
-nav.navbar .cssnav li:active
+/* nav.navbar .cssnav li:active
 {
-    transform: scale(1.35);
-}
+    transform: scale(1.0);
+} */
 nav.navbar .cssnav li a{
+    margin: 2px;
     text-decoration: none;
     display: block;
-    color: #47B5FF;
-    font-size: 18px;
+    color: #EEEEEE;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'Poppins';
+    letter-spacing: 1px;
 }
 nav.navbar .cssnav li a:hover
 {
-    color: #31E1F7;
+    transform: scale(0.8);
+    transition: 0.4s;
+}
+nav.navbar .cssnav li a:active
+{
+    transform: scale(2.5);
 }
 /* home section styling */
 .home{
     display: flex;
     height: 100vh;
-    background: url("/img/bg-programmer.jpg") no-repeat;
+    background: url("/img/background.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -151,12 +158,14 @@ nav.navbar .cssnav li a:hover
     inset: 3px;
     background: url("/img/frame.png") no-repeat;
     background-position: center;
+    /* background-color: #47B5FF; */
 }
 .card .img_box
 {
     position: absolute;
     top: -50%;
     left: 50%;
+    border-radius: 50%;
     transform: translate(-50%);
     width: 150px;
     height: 150px;
@@ -169,9 +178,11 @@ nav.navbar .cssnav li a:hover
 {
     width: 250px;
     height: 250px;
+    border-radius: 50%;
 }
 .card .img_box::before
 {
+    border-radius: 50%;
     content: '';
     position: absolute;
     top: 50%;
@@ -202,6 +213,8 @@ nav.navbar .cssnav li a:hover
     filter: grayscale(10%);
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 50%;
+
 }
 .card .content
 {
@@ -212,6 +225,7 @@ nav.navbar .cssnav li a:hover
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+
 }
 .card .content .details
 {
@@ -228,16 +242,16 @@ nav.navbar .cssnav li a:hover
 }
 .card .content .details h2
 {
-    font-size: 1.25em;
+    font-size: 1.50em;
     font-weight: 600;
-    color:turquoise;
+    color:#45f3ff;
     line-height: 1.2em;
 }
 .card .content .details h2 span
 {
     font-size: 1em;
     font-weight: 500;
-    color: #6EDCD9;
+    color: #EEEEEE;
     font-family: monospace sans-serif;
 }
 .card .content .data
@@ -443,11 +457,7 @@ span .typing
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #404258;
-    /* background: url("/img/bg-programmer.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; */
+    background-color: #FFFFFF;
     min-height: 100vh;
     flex-direction: column;
     padding: 100px 0;
@@ -459,7 +469,8 @@ span .typing
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 60px;
-    color: #FFFFFF;
+    color: teal;
+    letter-spacing: 2px;
 }
 .projectSec .projHead p
 {
@@ -475,12 +486,12 @@ span .typing
     width: 700px;
     border: solid 1px #1c1c1c;
 }
-.project-content .carousel-inner:hover
+/* .project-content .carousel-inner:hover
 {
     transform: scale(1.08);
     transition: 0.6s ease-in-out;
     box-shadow: 0 0 15px #47B5FF;
-}
+} */
 /* slides image */
 /* .project-content .slide-1 h1,
 .project-content .slide-2 h1,
@@ -509,12 +520,13 @@ span .typing
     position: absolute;
     bottom: 50px;
     left: calc(50% - 50px);
-    border: solid 1px #47B5FF;
+    border: solid 1px #FFFFFF;
     align-self: center;
     padding: 10px;
-    color: #47B5FF;
+    color: #FFFFFF;
     font-size: 13px;
     font-weight: 500;
+    border-radius: 10px;
 }
 .project-content .slide-1 a:hover,
 .project-content .slide-2 a:hover,
@@ -524,8 +536,9 @@ span .typing
 .project-content .slide-6 a:hover,
 .project-content .slide-7 a:hover
 {
-    background-color: #47B5FF;
-    transition: 0.6s ease;
+    background-color: teal;
+    border: solid 1px teal;
+    transition: 0.4s ease;
     color: #FFFFFF;
 }
 .project-content .slide-1
@@ -572,19 +585,10 @@ span .typing
 } */
 
 
-
-
-
-
-
-
-
-
-
 /* skills section styling */
 .skills{
     /* background-color: #00C1D4; */
-    background-color: #3D3C42;
+    background-color: whitesmoke;
     min-height: 70vh;
 }
 .skills h1
@@ -593,7 +597,8 @@ span .typing
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 60px;
-    color: #FFFFFF;
+    color: teal;
+    letter-spacing: 2px;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -610,12 +615,12 @@ span .typing
 .skills .skills-content span{
     font-weight: 500;
     font-size: 18px;
-    color: white;
+    color: teal;
 }
 .skills .skills-content .line{
     height: 5px;
     width: 100%;
-    background: #434242;
+    background: gray;
     position: relative;
 }
 .skills .skills-content .line::before{
@@ -625,7 +630,7 @@ span .typing
     left: 0;
     top: 0;
     /* background: #20B2AA; */
-    background-color: #D6E4E5;
+    background-color: teal;
 }
 /* left */
 .skills-content .html::before{
@@ -679,7 +684,7 @@ span .typing
 .contact p,
 .contact .head
 {
-    color: #3D3C42;
+    color: teal;
     font-size: 16px;
 }
 
@@ -689,7 +694,8 @@ span .typing
     font-family: 'Inspiration';
     font-weight: 500;
     font-size: 60px;
-    color: #3D3C42;
+    color: teal;
+    letter-spacing: 2px;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -715,13 +721,23 @@ span .typing
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: #3D3C42;
+    color: teal;
+    border: 1px teal solid;
+    padding: 10px;
+    width: 60px;
+    text-align: center;
+}
+.contact .contact-content .row i:hover
+{
+    background-color: teal;
+    color: #FFFFFF;
+    transition: 0.4s;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #113F67;
+    color: gray;
     font-size: 15px;
 }
 .contact .right form .fields{
@@ -744,7 +760,7 @@ span .typing
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1.5px solid #3D3C42;
+    border: 1.5px solid teal;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -753,17 +769,17 @@ span .typing
     transition: all 0.3s ease;
     background-color: transparent;
     opacity: 0.7;
-    color: #3D3C42;
+    color: teal;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #3D3C42;
+    border-color: teal;
 }
 .contact .right form .field input::placeholder,
 .contact .right form .textarea textarea::placeholder
 {
     opacity: 1;
-    color: #1C2B2D;
+    color: teal;
 }
 .contact .right form .textarea textarea{
     padding-top: 10px;
@@ -774,7 +790,7 @@ span .typing
     align-items: center;
 }
 .right form .button-area button{
-    color: #3D3C42;
+    color: teal;
     display: block;
     width: 160px!important;
     height: 45px;
@@ -785,12 +801,12 @@ span .typing
     cursor: pointer;
     flex-wrap: nowrap;
     background: none;
-    border: 2px solid #3D3C42;
+    border: 2px solid teal;
     transition: all 0.4s ease;
 }
 .right form .button-area button:hover{
     color: #FFFFFF;
-    background-color: #3D3C42;
+    background-color: teal;
 }
 
 /* footer */
@@ -800,8 +816,8 @@ footer
     width: 100%;
     z-index: 999;
     bottom: 0;
-    background-color: #393E46;
-    border-top: solid 2px #C3F8FF;
+    background-color: teal;
+    /* border-top: solid 4px #1c1c1c; */
 }
 footer .footerBox .data
 {
@@ -814,12 +830,12 @@ footer .footerBox .data a i
 {
     font-size: 30px;
     justify-content: space-between;
-    color: #47B5FF;
+    color: #EEEEEE;
 }
 footer .footerBox .data a i:hover
 {
     transform: scale(1.12);
-    color: #EB6440;
+    color: #45f3ff;
     transition: 0.6s;
 }
 
