@@ -155,7 +155,7 @@ nav.navbar .cssnav li a:active
     content: '';
     position: absolute;
     inset: 3px;
-    background: url("/img/frame.png") no-repeat;
+    background: url("/img/frame.jpg") no-repeat;
     background-position: center;
     /* background-color: #47B5FF; */
 }
@@ -370,6 +370,8 @@ span .typing
 }
 .about .about-content .mob 
 {
+    height: 260px;
+    width: 330px;
     background: url("/img/mobdev.png");
     background-position: center;
     background-size: cover;

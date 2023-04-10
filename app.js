@@ -43,34 +43,6 @@ app.post("/", async (req, res) =>{
     res.render("message", {nameEJS: name, emailEJS: email, subjectEJS: subject, msgEJS: msg});
 });
 
-//home
-app.get("/home", function(req, res){
-    res.render("index")
-});
-
-//about
-app.get("/about", function(req, res){
-    res.render("about")
-});
-
-//skills
-app.get("/skills", function(req, res){
-    res.render("skills")
-});
-
-//projects
-app.get("/projects", function(req, res){
-    res.render("projects")
-});
-
-//contact
-app.get("/contact", function(req, res){
-    res.render("contact")
-});
-app.post("/home", function(req, res){
-    res.render("index")
-});
-
 //admin login
 let credsError;
 app.get("/uid_killo-admin", function(req, res){

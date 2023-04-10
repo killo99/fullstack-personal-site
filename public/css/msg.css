@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu';
-    color:azure;
 }
 body
 {
@@ -12,7 +11,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #404258;
+    background-color: #EEEEEE;
 }
 body .container
 {
@@ -20,7 +19,7 @@ body .container
     padding: 10px;
     height: 450px;
     width: 480px;
-    background-color: black;
+    background-color: #fff;
     padding: 30px;
     opacity: 0.9;
     border-radius: 20px;
@@ -30,8 +29,8 @@ body .container h1
     text-align: center;
     font-size: 40px;
     margin: 10px 5px;
-    color: pink;
-    border: solid pink 1px;
+    color: teal;
+    border: solid teal 1px;
     border-radius: 10px;
 }
 body .container h2
@@ -50,8 +49,8 @@ body .container .msg
 {
     height: 130px;
     width: 100%;
-    background-color: #111;
-    border: solid pink 1px;
+    background-color: #fff;
+    border: solid teal 1px;
     overflow-y: scroll;
 }
 body .container .msg p
@@ -72,12 +71,12 @@ button{
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: pink;
-    border: 2px solid pink;
+    background: teal;
+    border: 2px solid teal;
     transition: all 0.3s ease;
 }
 button:hover{
-    color: pink;
+    color: teal;
     background: none;
 }
 
